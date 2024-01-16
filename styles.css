@@ -1,0 +1,271 @@
+/* GENERALES */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Tektur', sans-serif;
+}
+
+body{
+    background-color: #01c38e;
+}
+
+h3{
+    font-family: 'Paytone One', sans-serif;
+    font-size: 25px;
+}
+
+h2,h1{
+    font-family: 'Tektur', sans-serif;
+}
+
+p{
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+}
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.titulo{
+    color:#1A1E29;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* header */
+header{
+    width: 100%;
+    height: 550px;
+    position: relative;
+}
+
+.imagen-header{
+    max-width: 48%;
+    z-index: 10;
+
+}
+
+.titulos_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: justify;
+    width: 50%;
+    z-index: 10;
+    color: white;
+}
+.texto-header{
+    font-size: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.wave{
+    position: absolute;
+    width: 100%;
+    top:0;
+    left: 0;
+}
+
+.btn{
+    padding: 21px 50px;
+    background-color:white;
+    border-radius: 13px;
+    border: none;
+    margin: 40px 0 0 0;
+    font-size: 25px;
+    
+}
+
+
+/* estadisticas */
+.contenido-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+img{
+    display: block;
+}
+
+.img_mayores{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img_superior{
+    width: 80%;
+    margin: 0 0 30px 0;
+    display: block;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.img_inferior{
+    width: 40%;
+    margin: 0 0 15px 0;
+    border-radius: 15px;
+}
+
+.img_menores{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* estadisticas lima */
+
+.estadisticas_lima p{
+    margin: 0 0 60px 0;
+}
+
+
+
+.imagen_lima{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .img_lima{
+    width: 60%;
+    border-radius: 15px;
+}
+
+/* modalidades */
+.normal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Phishing,.carding,.sim,.Thiet{
+    width: 50%;
+}
+
+.reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+
+.tiktok{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tik-forma{
+    border-radius: 7px solid rgb(0, 0, 0);
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 910px){
+    .contenedor {
+        padding: 20px 0; /* Ajusta el padding según tus necesidades */
+        max-width: 100%; /* Haz que el ancho sea el 100% para ocupar el ancho completo */
+    }
+
+    .texto-header{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header{
+        height: 400px;
+    }
+
+    .imagen-header{
+        display: none;
+    }
+
+
+    .tiktok{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
+@media screen and (max-width:500px){
+    .reverse,.normal{
+        flex-direction: column;
+    }
+
+    .tiktok{
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1{
+        font-size: 100%;
+    }
+
+    .imagen-header{
+        display: none;
+    }
+
+
+    header{
+        height: 400px;
+    }
+
+    .img_menores{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img_inferior{
+        width: 80%;
+    }
+
+    .img_superior{
+        width: 0%;
+    }
+
+    .img_lima{
+        width: 80%;
+    }
+}
+@media screen and (max-width:340px){
+
+    .Phishing,.carding,.sim,.Thiet{
+        width: 80%;
+    }
+    .tiktok{
+        display: none;
+    }
+    .titulo{
+        font-size: 20px;
+        
+    }
+
+    .publicaciones .titulo{
+        display: none;
+    }
+
+    .contenedor{
+        padding: 30px 0px;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+    header{
+        height: 300px;
+    }
+}
